@@ -1,0 +1,216 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 100px;
+    position: relative;
+    background-color: blanchedalmond;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+}
+.nav ul li{
+    margin-right: 40px;
+}
+.nav ul li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #e71616;
+    transition: 0.4s ease-in;
+     font-weight: 600;
+    font-size: 20px;
+}
+.nav ul .active::after{
+   content: '';
+   width: 50%;
+   height: 3px;
+   background-color: #0b0402;
+   display: flex;
+   position: relative;
+   margin-left: 17px;
+}
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+.signin{
+    background: transparent;
+    border: none;
+}
+.signup{
+    background-color: rgb(51, 78, 255);
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .contleft{
+    display: block;
+    width: 100%;
+}
+.content .contleft .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .contleft .info h2{
+  font-size: 60px;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+.content .contleft .info p{
+  font-size: 20px;
+  line-height: 2pc;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+.content .contleft button{
+    padding: 10px 23px;
+    background-color: #b91f1f;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.content .contright{
+    display: block;
+    width: 100%;
+}
+.content .contright img{
+    width: 390px;
+    height: 390px;
+    position: relative;
+    margin-left: 6%;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{
+         transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.services h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.category .listitems{
+    width: 90%;
+    position: relative;
+    margin-top: 80px;
+}
+.category .listitems h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 75px;
+}
+.category .listitems .cardlist{
+    display: grid;
+    grid-template-columns: repeat(3, 10fr);
+    gap: 70px;
+}
+.category .cardlist .card{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgb(0,0,0,0.6);
+    border-radius: 10px;
+}
+.category .cardlist .card img{
+    width: 330px;
+    height: 270px;
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+.category .cardlist .card .foodtitle h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #6b002c;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.category .card .descfood p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.jee{
+    font-size: 18px;
+}
+.smicons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+.smicons ul{
+    list-style-type: none;
+    display: flex;
+}
+.smicons ul li{
+    margin-right: 6px;
+    margin-top: 10px;
+}
+.smicons ul li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #020202;
+    transition: 0.4s ease-in;
+    font-weight: 600;
+    font-size: 20px;
+}
+.smicons ul .active::after{
+   content: '';
+   width: 50%;
+   height: 3px;
+   background-color: #0b0402;
+   display: flex;
+   position: relative;
+   margin-left: 17px;
+}
